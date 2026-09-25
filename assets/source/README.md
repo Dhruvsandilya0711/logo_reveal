@@ -1,11 +1,12 @@
 # Source files
 
-Upload the original files here (GitHub → this folder → **Add file → Upload files**, on branch `claude/dazzling-fermi-m32up3`).
+Inputs the render pipeline reads. Nothing here is generated or modified by the pipeline.
 
 | File | What it is | Used for |
 |---|---|---|
-| `engilogo.jpeg` | Black-and-white line art of the Engineer mark (the original upload) | Regenerating the 2048 px relief textures so close-ups stay sharp |
-| Lockup image(s) | The end-card artwork: ENGINEER'26, pixel COGNITRIXX, "Rewire reality", "NITK Surathkal's" | End card of every cut |
-| Pursuit audio (`.mp3` / `.wav`) | Gesaffelstein – *Pursuit* | Beat sync and the final mix |
+| `Pursuit.mp3` | Gesaffelstein – *Pursuit* (uploaded) | Beat analysis (108.95 BPM; build cuts out at 0:52.47, drop hits at 0:52.725) and the audio mix |
+| `cognitrixx-reel-v2-12s.mp4` | The approved v2 reveal reel | Reference for the finished logo look (hero pose, material); source of the end-card lockup |
+| `cognitrixx-reel-v2-cover.jpg` | v2 cover frame | Reference |
+| `engineer-mark-lineart-399px.png` | Engineer mark line art, 399×389 px | Reference only; too small to regenerate the relief textures |
 
-Nothing here is generated; the render pipeline reads these files and never modifies them.
+To get sharper close-ups, add the original full-size line art here as `engilogo.jpeg`. The earlier sessions' texture generators crop a 1560 px square from it to build a 2048 px texture set.
